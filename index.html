@@ -1,0 +1,73 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Manipulation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <form id="dataForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="mobile">Mobile:</label>
+                <input type="tel" id="mobile" name="mobile" required>
+            </div>
+            <button type="submit">Add Data</button>
+        </form><br></br>
+    </div>
+    <div id="tableContainer"></div>
+
+    <!-- Buttons to call functions -->
+    <button id="removeLast">Remove Last Element</button>
+    <form id="removeIndexForm">
+        <label for="removeIndex">Remove Element at Index:</label>
+        <input type="number" id="removeIndex" name="removeIndex" required>
+        <button type="submit">Remove</button>
+    </form>
+    <form id="addTopForm">
+        <label for="addTopName">Name:</label>
+        <input type="text" id="addTopName" name="addTopName" required>
+        <label for="addTopEmail">Email:</label>
+        <input type="email" id="addTopEmail" name="addTopEmail" required>
+        <label for="addTopMobile">Mobile:</label>
+        <input type="tel" id="addTopMobile" name="addTopMobile" required>
+        <button type="submit">Add Element to Top</button>
+    </form>
+    <form id="addIndexForm">
+        <label for="addIndex">Add Element at Index:</label>
+        <input type="number" id="addIndex" name="addIndex" required>
+        <label for="addAtIndexName">Name:</label>
+        <input type="text" id="addAtIndexName" name="addAtIndexName" required>
+        <label for="addAtIndexEmail">Email:</label>
+        <input type="email" id="addAtIndexEmail" name="addAtIndexEmail" required>
+        <label for="addAtIndexMobile">Mobile:</label>
+        <input type="tel" id="addAtIndexMobile" name="addAtIndexMobile" required>
+        <button type="submit">Add Element at Index</button>
+    </form>
+    <form id="parseCSVForm">
+        <label for="csvString">Parse CSV String:</label>
+        <textarea id="csvString" name="csvString" rows="3" cols="30" required></textarea>
+        <button type="submit">Parse CSV</button>
+    </form>
+
+    <script src="createTableView.js"></script>
+    <script src="appendData.js"></script>
+    <script src="removeLastElement.js"></script>
+    <script src="removeElementAtIndex.js"></script>
+    <script src="addElementToTop.js"></script>
+    <script src="addElementAtIndex.js"></script>
+    <script src="parseCSVString.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
